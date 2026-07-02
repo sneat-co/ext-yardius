@@ -1,9 +1,10 @@
 // @sneat/yardius-contract — frozen cross-repo contract surface for the yardius extension.
 //
-// Shared DTOs (domain records, consts, briefs, …) will be exported from here so
-// that both the Sneat super-app extension libs and any standalone yardius app
-// resolve every shared model from this single package.
-//
-// Intentionally empty for now: the DTOs land in a follow-up task.
+// Shared DTOs (listings, transaction-log entries, request/claim shapes, the
+// listings-endpoint contract), lifecycle state enums with their legal
+// transition tables, and the listing-visibility ceiling mapping are exported
+// from here so that both the sneat-go backend models and the Sneat super-app
+// extension libs resolve every shared model from this single package. No
+// consumer may re-declare these.
 
-export {};
+export * from './lib';

@@ -13,7 +13,30 @@ duplicate DTO definitions are allowed in the `yardius` implementation repo.
 
 ## Status
 
-Intentionally empty for now — see `src/index.ts`. DTOs land in a follow-up task.
+The shared cross-repo surface is exported from `src/index.ts` — see `src/lib/`
+for the individual modules and their `*.spec.ts` round-trip and table-driven
+tests:
+
+- the Listing DTO (`IListingDto`, discriminated by type `borrow`/`giveaway`;
+  references the Assetus asset **by ID only** — no duplicated ownership
+  fields) in `listing.ts`;
+- listing visibility (`private`/`members`/`friends`, default `members`) and
+  the Assetus-visibility **ceiling mapping** as shared data
+  (`LISTING_VISIBILITY_CEILING`, `allowedListingVisibilities`,
+  `isListingVisibilityAllowed`) in `listing-visibility.ts` /
+  `assetus-visibility.ts`;
+- the borrow (`available → requested → approved → borrowed → returned →
+  closed`) and give-away (`available → claimed → transferred → closed`)
+  lifecycle state enums with their **legal-transition tables** and pure
+  `canTransition*` helpers in `borrow-state.ts` / `giveaway-state.ts` /
+  `state-transitions.ts`;
+- transaction-log entry DTO and the exact event-type set (publish, request,
+  withdraw, approve, decline, handover, return, claim, transfer, cancel) in
+  `transaction-log.ts`;
+- the request/claim shape (`IListingRequestDto`) in `listing-request.ts`;
+- the listings-endpoint request/response contract (auth-implied request;
+  response grouped/labelled by owning Space, member + direct-friend scope
+  only) in `listings-endpoint.ts`.
 
 ## Frozen means frozen
 
