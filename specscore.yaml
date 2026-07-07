@@ -1,10 +1,10 @@
 # SpecScore Repo Config Schema: https://specscore.md/repo-config
 
 project:
-    title: yardius-contract
+    title: ext-yardius
     host: github.com
     org: sneat-co
-    repo: yardius-contract
+    repo: ext-yardius
 publication:
     default:
         actions:

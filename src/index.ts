@@ -1,4 +1,4 @@
-// @sneat/yardius-contract — frozen cross-repo contract surface for the yardius extension.
+// @sneat/extension-yardius-contract — frozen cross-repo contract surface for the yardius extension.
 //
 // Shared DTOs (listings, transaction-log entries, request/claim shapes, the
 // listings-endpoint contract), lifecycle state enums with their legal
