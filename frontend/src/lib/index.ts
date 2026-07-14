@@ -1,4 +1,5 @@
 export * from './assetus-visibility.js';
+export * from './friendship.js';
 export * from './listing-visibility.js';
 export * from './state-transitions.js';
 export * from './borrow-state.js';

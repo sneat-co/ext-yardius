@@ -28,11 +28,17 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
-  "devDependencies": {
-    "@nx/js": "22.7.5",
-    "nx": "22.7.5",
+	"devDependencies": {
+		"@angular/core": "^21.0.0",
+		"@nx/js": "22.7.5",
+		"nx": "22.7.5",
+		"rxjs": "^7.0.0",
     "typescript": "~5.9.3",
     "vite": "^7.2.7",
-    "vitest": "4.0.9"
-  }
+		"vitest": "4.0.9"
+	},
+	"peerDependencies": {
+		"@angular/core": "^21.0.0",
+		"rxjs": "^7.0.0"
+	}
 }

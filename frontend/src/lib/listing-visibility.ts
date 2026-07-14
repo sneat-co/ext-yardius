@@ -16,6 +16,17 @@ export type ListingVisibility = (typeof LISTING_VISIBILITIES)[number];
 // visibility.
 export const DEFAULT_LISTING_VISIBILITY: ListingVisibility = 'members';
 
+export function listingVisibilityLabel(visibility: ListingVisibility): string {
+	switch (visibility) {
+		case 'private':
+			return 'Private';
+		case 'members':
+			return 'Members';
+		case 'friends':
+			return 'Friends';
+	}
+}
+
 // The asset's Assetus visibility is a CEILING on the listing's visibility,
 // per this exact mapping from REQ listing-visibility-ceiling:
 //

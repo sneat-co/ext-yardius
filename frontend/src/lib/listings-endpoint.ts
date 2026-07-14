@@ -1,4 +1,4 @@
-import { IListingDto } from './listing.js';
+import type { IAvailableListingDto, IListingDto } from './listing.js';
 
 // The listings-endpoint request/response contract, per REQ
 // backend-mediated-query: listings available to a user are served ONLY by
@@ -39,5 +39,8 @@ export interface IListingsSpaceGroup {
 // every Space befriended with any of the caller's Spaces — grouped by the
 // owning Space. Nothing else.
 export interface IGetListingsResponse {
-	readonly groups: readonly IListingsSpaceGroup[];
+	/** Grouped response used by the relationship-first listing endpoint. */
+	readonly groups?: readonly IListingsSpaceGroup[];
+	/** Flat response used by the existing `get_available_listings` facade. */
+	readonly listings?: readonly IAvailableListingDto[];
 }
