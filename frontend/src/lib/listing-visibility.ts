@@ -1,4 +1,4 @@
-import { AssetusVisibility } from './assetus-visibility';
+import { AssetusVisibility } from './assetus-visibility.js';
 
 // A Listing's own visibility, per REQ listing-visibility-ceiling (spec display
 // names `Private` / `Members` / `Friends`, persisted as the wire values

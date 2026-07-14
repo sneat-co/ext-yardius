@@ -4,8 +4,8 @@ import {
 	GIVEAWAY_STATE_TRANSITIONS,
 	GIVEAWAY_STATES,
 	GiveawayState,
-} from './giveaway-state';
-import { canTransition } from './state-transitions';
+} from './giveaway-state.js';
+import { canTransition } from './state-transitions.js';
 
 describe('GIVEAWAY_STATES', () => {
 	it('is exactly the REQ giveaway-lifecycle state set, in lifecycle order', () => {

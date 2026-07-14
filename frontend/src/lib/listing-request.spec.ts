@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { IListingRequestDto, LISTING_REQUEST_STATUSES } from './listing-request';
+import { IListingRequestDto, LISTING_REQUEST_STATUSES } from './listing-request.js';
 
 describe('LISTING_REQUEST_STATUSES', () => {
 	it('is exactly {pending, approved, declined, withdrawn}', () => {

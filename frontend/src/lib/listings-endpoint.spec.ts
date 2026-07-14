@@ -3,7 +3,7 @@ import {
 	IGetListingsRequest,
 	IGetListingsResponse,
 	IListingsSpaceGroup,
-} from './listings-endpoint';
+} from './listings-endpoint.js';
 
 describe('IGetListingsRequest', () => {
 	it('carries no parameters — the caller is auth-implied (REQ backend-mediated-query)', () => {

@@ -1,4 +1,4 @@
-import { canTransition, StateTransitionTable } from './state-transitions';
+import { canTransition, StateTransitionTable } from './state-transitions.js';
 
 // Borrow-listing lifecycle states, per REQ borrow-lifecycle (spec display
 // names `Available → Requested → Approved → Borrowed → Returned → Closed`,

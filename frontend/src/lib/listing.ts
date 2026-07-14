@@ -1,6 +1,6 @@
-import { BorrowState } from './borrow-state';
-import { GiveawayState } from './giveaway-state';
-import { ListingVisibility } from './listing-visibility';
+import { BorrowState } from './borrow-state.js';
+import { GiveawayState } from './giveaway-state.js';
+import { ListingVisibility } from './listing-visibility.js';
 
 // A Listing's transaction type, per REQ publish-listing: exactly `borrow` or
 // `giveaway`. Sell / swap / reserve are explicitly out of MVP scope.

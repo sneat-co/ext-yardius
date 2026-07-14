@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { ASSETUS_VISIBILITIES, AssetusVisibility } from './assetus-visibility';
+import { ASSETUS_VISIBILITIES, AssetusVisibility } from './assetus-visibility.js';
 import {
 	allowedListingVisibilities,
 	DEFAULT_LISTING_VISIBILITY,
@@ -7,7 +7,7 @@ import {
 	LISTING_VISIBILITIES,
 	LISTING_VISIBILITY_CEILING,
 	ListingVisibility,
-} from './listing-visibility';
+} from './listing-visibility.js';
 
 describe('listing visibility', () => {
 	it('has exactly the three visibilities from REQ listing-visibility-ceiling', () => {

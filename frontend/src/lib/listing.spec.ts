@@ -4,7 +4,7 @@ import {
 	IGiveawayListingDto,
 	IListingDto,
 	LISTING_TYPES,
-} from './listing';
+} from './listing.js';
 
 describe('LISTING_TYPES', () => {
 	it("is exactly {'borrow', 'giveaway'} per REQ publish-listing", () => {

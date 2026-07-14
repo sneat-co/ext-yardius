@@ -1,4 +1,4 @@
-import { IListingDto } from './listing';
+import { IListingDto } from './listing.js';
 
 // The listings-endpoint request/response contract, per REQ
 // backend-mediated-query: listings available to a user are served ONLY by

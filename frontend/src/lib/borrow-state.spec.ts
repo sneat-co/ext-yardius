@@ -4,8 +4,8 @@ import {
 	BORROW_STATES,
 	BorrowState,
 	canTransitionBorrow,
-} from './borrow-state';
-import { canTransition } from './state-transitions';
+} from './borrow-state.js';
+import { canTransition } from './state-transitions.js';
 
 describe('BORROW_STATES', () => {
 	it('is exactly the REQ borrow-lifecycle state set, in lifecycle order', () => {

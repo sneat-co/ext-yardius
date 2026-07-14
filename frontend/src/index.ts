@@ -7,4 +7,4 @@
 // extension libs resolve every shared model from this single package. No
 // consumer may re-declare these.
 
-export * from './lib';
+export * from './lib/index.js';

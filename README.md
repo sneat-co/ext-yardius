@@ -13,7 +13,8 @@ duplicate DTO definitions are allowed in the `yardius` implementation repo.
 
 ## Status
 
-The shared cross-repo surface is exported from `src/index.ts` — see `src/lib/`
+The shared cross-repo surface is exported from `frontend/src/index.ts` — see
+`frontend/src/lib/`
 for the individual modules and their `*.spec.ts` round-trip and table-driven
 tests:
 
@@ -42,3 +43,11 @@ tests:
 
 Changes here are breaking changes for every consumer. Keep the surface minimal,
 additive, and versioned; implementation details stay in the `yardius` repo.
+
+## Build and release
+
+The contract is a small Nx project (`ext-yardius-contract`) in `frontend/`.
+`pnpm exec nx build ext-yardius-contract` emits the Node ESM package to
+`frontend/dist/`; tests and type-checking run from that same directory. Pushes
+to `main` use the shared Sneat npm workflow and `nx release` to version,
+publish, tag, and push the contract release.

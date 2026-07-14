@@ -1,6 +1,8 @@
 name: Publish contract
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       ref:
@@ -14,5 +16,7 @@ jobs:
     with:
       working-directory: frontend
       ref: ${{ inputs.ref }}
-      publish-command: pnpm publish --no-git-checks --access public
+      install-command: pnpm install --no-frozen-lockfile --ignore-scripts
+      build-command: pnpm exec nx build ext-yardius-contract
+      publish-command: pnpm exec nx release --yes && git push --follow-tags
     secrets: inherit

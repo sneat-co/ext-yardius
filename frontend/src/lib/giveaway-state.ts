@@ -1,4 +1,4 @@
-import { canTransition, StateTransitionTable } from './state-transitions';
+import { canTransition, StateTransitionTable } from './state-transitions.js';
 
 // Give-away-listing lifecycle states, per REQ giveaway-lifecycle (spec
 // display names `Available → Claimed → Transferred → Closed`, persisted as

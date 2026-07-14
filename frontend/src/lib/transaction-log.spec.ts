@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { ITransactionLogEntry, YARDIUS_EVENT_TYPES } from './transaction-log';
+import { ITransactionLogEntry, YARDIUS_EVENT_TYPES } from './transaction-log.js';
 
 describe('YARDIUS_EVENT_TYPES', () => {
 	it('is exactly the REQ transaction-log event set', () => {
