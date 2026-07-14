@@ -1,6 +1,6 @@
 {
   "name": "@sneat/extension-yardius-contract",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Frozen cross-repo contract surface (shared DTOs, consts, briefs) for the yardius Sneat extension",
   "license": "MIT",
   "repository": {
