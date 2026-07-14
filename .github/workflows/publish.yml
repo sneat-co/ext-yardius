@@ -18,5 +18,5 @@ jobs:
       ref: ${{ inputs.ref }}
       install-command: pnpm install --no-frozen-lockfile --ignore-scripts
       build-command: pnpm exec nx build ext-yardius-contract
-      publish-command: pnpm exec nx release --yes && npm access set status=public @sneat/extension-yardius-contract && git push --follow-tags
+      publish-command: pnpm exec nx release --yes && git push --follow-tags
     secrets: inherit
