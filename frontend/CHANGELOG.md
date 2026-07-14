@@ -1,3 +1,13 @@
+## 0.2.0 (2026-07-14)
+
+### 🚀 Features
+
+- restore Yardius runtime contract API ([1dd9dd2](https://github.com/sneat-co/ext-yardius/commit/1dd9dd2))
+
+### ❤️ Thank You
+
+- Alexander Trakhimenok
+
 ## 0.1.1 (2026-07-14)
 
 ### 🩹 Fixes

@@ -1,6 +1,6 @@
 {
   "name": "@sneat/extension-yardius-contract",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Frozen cross-repo contract surface (shared DTOs, consts, briefs) for the yardius Sneat extension",
   "license": "MIT",
   "repository": {
@@ -28,17 +28,17 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
-	"devDependencies": {
-		"@angular/core": "^21.0.0",
-		"@nx/js": "22.7.5",
-		"nx": "22.7.5",
-		"rxjs": "^7.0.0",
+  "devDependencies": {
+    "@angular/core": "^21.0.0",
+    "@nx/js": "22.7.5",
+    "nx": "22.7.5",
+    "rxjs": "^7.0.0",
     "typescript": "~5.9.3",
     "vite": "^7.2.7",
-		"vitest": "4.0.9"
-	},
-	"peerDependencies": {
-		"@angular/core": "^21.0.0",
-		"rxjs": "^7.0.0"
-	}
+    "vitest": "4.0.9"
+  },
+  "peerDependencies": {
+    "@angular/core": "^21.0.0",
+    "rxjs": "^7.0.0"
+  }
 }
